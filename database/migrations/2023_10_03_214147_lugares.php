@@ -12,7 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         //
-        
+        Schema::create('lugares',function (Blueprint $table){
+            $table->bigIncrements('id');
+            $table->string('lugar');
+            $table->string('imagen');
+            $table->string('descripcion');
+            $table->string('url');
+
+            $table->timestamps();
+        });
     }
 
     /**
