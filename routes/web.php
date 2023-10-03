@@ -19,6 +19,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::resource('/luagres',App\Http\Controllers\LugareController::class);
+Route::resource('/lugares',App\Http\Controllers\LugareController::class);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
