@@ -2,13 +2,10 @@
 @section('content')
 @foreach ($lugares as $lugare)
                                
-							    
-								{{ $lugare->url }}
-
 
                                         <!-- Portfolio Modals-->
         <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1{{ $lugare->id }}">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
@@ -16,7 +13,7 @@
                         </div>
                     </div>
         <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="portfolioModal1{{ $lugare->id }}" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
@@ -36,10 +33,10 @@
                                     <img class="img-fluid rounded mb-5" src="{{ $lugare->imagen }}" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">{{ $lugare->descripcion }}</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <a href="{{ $lugare->url }}" class="btn btn-primary">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                        Ver viista previa
+                                    </a>
                                 </div>
                             </div>
                         </div>
