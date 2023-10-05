@@ -19,7 +19,7 @@
              header{
                 background-size: cover; /* Para que la imagen se ajuste al tamaño del elemento */
                 background-position: center; /* Puedes ajustar la posición según tus preferencias */
-                background-image: url('{{asset('img/paisaje.jpg')}}');
+                background-image: url('{{asset('img/principal.jpg')}}');
             }
             .masthead-heading{
                 color:black;
@@ -27,12 +27,34 @@
             .masthead-subheading{
                 color:black;
             }
+            .page-section{
+                background-color: #2c3e50;
+
+            }
+            .page-section-heading{
+                color:white;
+            }
+            .page-section-heading{
+                color:white;
+            }
+            .logo{
+                max-width: 100%;
+                height: 7vh;
+                width: 9%;
+                position: absolute; /* Activa la posición absoluta */
+                left: 0; /* Alinea el elemento a la izquierda */
+                opacity: 0.5;
+            }
+           
+
+
         </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
+                <img src="{{asset('img/log.jpg')}}" alt="" class="logo">
                 <a class="navbar-brand" href="#page-top">AGENCIA DE TURISMO</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
@@ -41,7 +63,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Informacion</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">¿Quienes somos?</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contactanos</a></li>
                     </ul>
                 </div>
@@ -61,7 +83,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-             
+
             </div>
         </header>
         <!-- Portfolio Section-->
@@ -69,7 +91,7 @@
             <div class="container">
 
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <h2 class="page-section-heading text-center text-uppercase mb-0">Portfolio</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -84,10 +106,10 @@
             </div>
         </section>
         <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
+        <section class="page-section  text-white mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white">¿Quienes somos?</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -112,7 +134,7 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <h2 class="page-section-heading text-center text-uppercase  mb-0">Contactanos</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
