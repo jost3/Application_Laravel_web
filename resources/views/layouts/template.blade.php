@@ -15,6 +15,19 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+             header{
+                background-size: cover; /* Para que la imagen se ajuste al tamaño del elemento */
+                background-position: center; /* Puedes ajustar la posición según tus preferencias */
+                background-image: url('{{asset('img/paisaje.jpg')}}');
+            }
+            .masthead-heading{
+                color:black;
+            }
+            .masthead-subheading{
+                color:black;
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -35,10 +48,10 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
+        <header class="masthead  text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">City Tours</h1>
                 <!-- Icon Divider-->
@@ -48,13 +61,13 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Tu mejor opcion para salir fuera de tu ciudad</p>
+             
             </div>
         </header>
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
-               
+
                 <!-- Portfolio Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
                 <!-- Icon Divider-->
@@ -66,7 +79,7 @@
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
                 @yield('content')
-                    
+
                 </div>
             </div>
         </section>
@@ -204,7 +217,7 @@
             <div class="container"><small>Copyright &copy; Your Website 2023</small></div>
         </div>
         <!-- Portfolio Modals-->
-        
+
 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
