@@ -67,9 +67,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Reservaciones</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Lugares</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">¿Quienes somos?</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contactanos</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Reservacion</a></li>
                     </ul>
                 </div>
             </div>
@@ -92,7 +92,7 @@
             <div class="container">
 
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase mb-0">Reservaciones</h2>
+                <h2 class="page-section-heading text-center text-uppercase mb-0">Lugares</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -119,23 +119,18 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead">somos un equipo apasionado de expertos en turismo que se dedican a brindarte experiencias inolvidables en algunas de las ciudades más fascinantes del mundo. Nos enorgullece ser tu guía confiable para descubrir los secretos mejor guardados, las joyas culturales y los tesoros escondidos de cada destino que visitamos. Nuestro compromiso es ofrecerte viajes llenos de emoción, descubrimiento y conexión con las comunidades locales</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Somos más que una empresa de turismo; somos amantes de las ciudades y estamos aquí para asegurarnos de que tu viaje sea memorable en todos los sentidos. ¡Únete a nosotros en esta emocionante aventura para descubrir el corazón de las ciudades que amamos!"</p></div>
                 </div>
                 <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download me-2"></i>
-                        Free Download!
-                    </a>
-                </div>
+
             </div>
         </section>
         <!-- Contact Section-->
         <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase  mb-0">Contactanos</h2>
+                <h2 class="page-section-heading text-center text-uppercase  mb-0">Reservacion</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -156,27 +151,27 @@
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                <label for="name">Nombres</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">Campo obligatorio</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                <label for="email">Email</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">Campo obligatorio.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">No es valido este email.</div>
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                <label for="phone">Numero de telfono</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">Campo obligatorio</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                <label for="message">lugar</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Campo obligatorio.</div>
                             </div>
                             <!-- Submit success message-->
                             <!---->
@@ -185,7 +180,7 @@
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
                                     <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
+                                    To activate this form, sign up a  t
                                     <br />
                                     <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                 </div>
@@ -196,7 +191,7 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Reservar</button>
                         </form>
                     </div>
                 </div>
@@ -208,7 +203,7 @@
                 <div class="row">
                     <!-- Footer Location-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <h4 class="text-uppercase mb-4">Hubicacion</h4>
                         <p class="lead mb-0">
                             2215 John Daniel Drive
                             <br />
@@ -217,7 +212,7 @@
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <h4 class="text-uppercase mb-4">Redes Sociales</h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
@@ -225,10 +220,10 @@
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                        <h4 class="text-uppercase mb-4">Información para tu viaje:</h4>
                         <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
+                        Clima y Pronóstico del Tiempo
+                            <a href="https://www.gob.pe/senamhi">Visitar</a>
                             .
                         </p>
                     </div>
@@ -237,7 +232,7 @@
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Your Website 2023</small></div>
+            <div class="container"><small>Copyright &copy; Derechos reservados 2023</small></div>
         </div>
         <!-- Portfolio Modals-->
 
