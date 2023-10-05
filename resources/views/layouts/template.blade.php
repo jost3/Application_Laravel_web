@@ -17,15 +17,20 @@
         <link href="css/styles.css" rel="stylesheet" />
         <style>
              header{
+                height: 60vh;
                 background-size: cover; /* Para que la imagen se ajuste al tamaño del elemento */
                 background-position: center; /* Puedes ajustar la posición según tus preferencias */
                 background-image: url('{{asset('img/principal.jpg')}}');
             }
             .masthead-heading{
-                color:black;
+                color:white;
+                position: absolute;
+                top:30%;
             }
             .masthead-subheading{
-                color:black;
+                color:white;
+                position: absolute;
+                top:40%;
             }
             .page-section{
                 background-color: #2c3e50;
@@ -45,8 +50,9 @@
                 left: 0; /* Alinea el elemento a la izquierda */
                 opacity: 0.5;
             }
-           
-
+            .navbar-toggler{
+                background-color:#dc3545;
+            }
 
         </style>
     </head>
@@ -54,15 +60,14 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <img src="{{asset('img/log.jpg')}}" alt="" class="logo">
                 <a class="navbar-brand" href="#page-top">AGENCIA DE TURISMO</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler text-uppercase font-weight-bold  text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Reservaciones</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">¿Quienes somos?</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contactanos</a></li>
                     </ul>
@@ -75,13 +80,9 @@
                 <!-- Masthead Avatar Image-->
 
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">City Tours</h1>
+                <h1 class="masthead-heading text-uppercase mb-0">City Tours</h1><br><br>
                 <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
+                <p class="masthead-subheading font-weight-light mb-0">"Déjate llevar por la magia de los viajes y descubre nuevos horizontes junto a nosotros."</p>
                 <!-- Masthead Subheading-->
 
             </div>
@@ -91,9 +92,9 @@
             <div class="container">
 
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase mb-0">Portfolio</h2>
+                <h2 class="page-section-heading text-center text-uppercase mb-0">Reservaciones</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom">
+                <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
@@ -136,7 +137,7 @@
                 <!-- Contact Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase  mb-0">Contactanos</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom">
+                <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>

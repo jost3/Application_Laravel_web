@@ -1,7 +1,7 @@
 @extends('layouts.template')
 @section('content')
 @foreach ($lugares as $lugare)
-                               
+
 
                                         <!-- Portfolio Modals-->
         <div class="col-md-6 col-lg-4 mb-5">
