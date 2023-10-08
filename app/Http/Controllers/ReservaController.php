@@ -9,6 +9,12 @@ class ReservaController extends Controller
     //
     public function store(Request $request)
     {
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'phone' => 'required',
+            'message' => 'required',
+        ]);
 
         $Reserva = new Reserva;
         $Reserva->nombre = $request->name;
@@ -18,12 +24,5 @@ class ReservaController extends Controller
         $Reserva->save();
         return back()->with('success','formulaio hecho');
 
-           /* 'nombre' => $request->input('name'),
-            'email' => $request->input('email'),
-            'telefono' => $request->input('phone'),
-            'lugar' => $request->input('message'),
-        ->save();
-        // Puedes redirigir a una página de éxito o devolver una respuesta JSON, según tus necesidades.
-        return 'completado';*/
     }
 }

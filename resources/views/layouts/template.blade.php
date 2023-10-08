@@ -153,12 +153,22 @@
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                                 <label for="name">Nombres</label>
+                                @error('name')
+                                <small class="text-danger">
+                                    <strong>Campo obligatorio:</strong>
+                                </small>
+                                @enderror
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Campo obligatorio</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                                 <label for="email">Email</label>
+                                @error('email')
+                                <small class="text-danger">
+                                    <strong>Campo obligatorio:</strong>
+                                </small>
+                                @enderror
                                 <div class="invalid-feedback" data-sb-feedback="email:required">Campo obligatorio.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">No es valido este email.</div>
                             </div>
@@ -166,12 +176,22 @@
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                                 <label for="phone">Numero de telfono</label>
+                                @error('phone')
+                                <small class="text-danger">
+                                    <strong>Campo obligatorio:</strong>
+                                </small>
+                                @enderror
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">Campo obligatorio</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                 <label for="message">lugar</label>
+                                @error('message')
+                                <small class="text-danger">
+                                    <strong>Campo obligatorio:</strong>
+                                </small>
+                                @enderror
                                 <div class="invalid-feedback" data-sb-feedback="message:required">Campo obligatorio.</div>
                             </div>
                             <!-- Submit success message-->
