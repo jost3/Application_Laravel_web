@@ -12,4 +12,8 @@ class PortafolioController extends Controller
         $lugares = Lugare::paginate();
         return view('welcome', compact('lugares'));
     }
+
+    public function store(){
+        echo "funciona o no";
+    }
 }

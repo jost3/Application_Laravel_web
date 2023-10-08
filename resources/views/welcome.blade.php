@@ -3,7 +3,7 @@
 @foreach ($lugares as $lugare)
 
 
-                                        <!-- Portfolio Modals-->
+                                        <!-- Portfolio modales-->
         <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1{{ $lugare->id }}">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">

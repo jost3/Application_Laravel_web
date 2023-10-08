@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[App\Http\Controllers\PortafolioController::class, 'index']);
+Route::post('/store',[App\Http\Controllers\PortafolioController::class, 'store']);
 
 Auth::routes();
 
