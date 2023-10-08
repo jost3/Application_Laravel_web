@@ -185,8 +185,8 @@
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">lugar</label>
+                                <input class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..."  data-sb-validations="required"></input>
+                                <label for="message">Lugar</label>
                                 @error('message')
                                 <small class="text-danger">
                                     <strong>Campo obligatorio:</strong>
@@ -266,6 +266,47 @@
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Espera a que el documento esté completamente cargado
+
+        var confirmationModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+        var confirmSubmitButton = document.getElementById('confirmSubmitButton');
+        var contactForm = document.getElementById('contactForm');
+
+        // Captura el evento de clic en el botón "Enviar" de la ventana modal
+        confirmSubmitButton.addEventListener('click', function() {
+            // Envía el formulario
+            contactForm.submit();
+        });
+
+        // Captura el evento de envío del formulario
+        contactForm.addEventListener('submit', function(event) {
+            // Muestra la ventana modal de Bootstrap
+            confirmationModal.show();
+
+            // Previene el envío automático del formulario
+            event.preventDefault();
+        });
+    });
+</script>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Confirmación</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ¿Estás seguro de enviar tu reservación?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-primary"id="confirmSubmitButton" >Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>
     </body>
 </html>
