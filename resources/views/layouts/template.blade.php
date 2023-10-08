@@ -147,8 +147,7 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form action="/store" method="POST">
-                            {{ csrf_field() }}
+                        <form id="contactForm" action="{{ route('reservar.store') }}" method="POST">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
@@ -181,7 +180,7 @@
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
                                     <div class="fw-bolder">RESRVACION COMPLETADA</div>
-
+                                   
                                     <br />
                                     <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                 </div>
@@ -192,7 +191,7 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
-                            <button class="btn btn-primary" type="submit">Reservar</button>
+                            <button class="btn btn-primary btn-xl " id="submitButton" type="submit">Reservar</button>
                         </form>
                     </div>
                 </div>

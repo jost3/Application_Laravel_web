@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\ReservaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[App\Http\Controllers\PortafolioController::class, 'index']);
-Route::post('/store',[App\Http\Controllers\PortafolioController::class, 'store']);
 
 Auth::routes();
 
 Route::resource('/lugares',App\Http\Controllers\LugareController::class);
+Route::post('/reservar', [ReservaController::class, 'store'])->name('reservar.store');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
