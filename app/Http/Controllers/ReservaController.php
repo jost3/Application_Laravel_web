@@ -7,4 +7,8 @@ use Illuminate\Http\Request;
 class ReservaController extends Controller
 {
     //
+    public function store(Request $request)
+    {
+        
+    }
 }
